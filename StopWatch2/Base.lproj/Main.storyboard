@@ -1,25 +1,184 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Crysta.ttf">
+            <string>CrystalItalic-</string>
+            <string>CrystalItalic-</string>
+            <string>CrystalItalic-</string>
+            <string>CrystalItalic-</string>
+            <string>CrystalItalic-</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="StopWatch2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flame.png" translatesAutoresizingMaskIntoConstraints="NO" id="wRu-u2-Nt3">
+                                <rect key="frame" x="94" y="67" width="548" height="280"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gO-QZ-yCM">
+                                <rect key="frame" x="107" y="105" width="504" height="155"/>
+                                <fontDescription key="fontDescription" name="CrystalItalic-" family="Crystal" pointSize="170"/>
+                                <color key="textColor" red="1" green="0.65856083939999999" blue="0.21138644100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lp6-H9-rMx">
+                                <rect key="frame" x="413" y="274" width="212" height="61"/>
+                                <color key="backgroundColor" red="0.19142597853535348" green="0.19142597853535348" blue="0.19142597853535348" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CrystalItalic-" family="Crystal" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.65856083939999999" blue="0.21138644100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAk-jj-ikr">
+                                <rect key="frame" x="113" y="274" width="61" height="61"/>
+                                <state key="normal" image="ButtonAC_SW.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear" destination="vXZ-lx-hvc" eventType="touchUpInside" id="okd-ZT-XYO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2v-Kg-ttU">
+                                <rect key="frame" x="246" y="274" width="61" height="61"/>
+                                <state key="normal" image="ButtonLAP_SW.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lap" destination="vXZ-lx-hvc" eventType="touchUpInside" id="427-4Q-zw7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idc-ud-lqh">
+                                <rect key="frame" x="180" y="274" width="61" height="61"/>
+                                <state key="normal" image="Button_SW.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Tr8-hy-w5d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBg-dL-DKN">
+                                <rect key="frame" x="312" y="274" width="61" height="61"/>
+                                <state key="normal" image="ButtonREC_SW.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CuU-VO-ixF" kind="modal" id="ZjT-QO-R04"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="Label" destination="5gO-QZ-yCM" id="xmo-38-LRf"/>
+                        <outlet property="lapLabel" destination="Lp6-H9-rMx" id="5nM-pF-vqO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="153" y="281"/>
+        </scene>
+        <!--Lap View Controller-->
+        <scene sceneID="VxM-CV-sHV">
+            <objects>
+                <viewController id="CuU-VO-ixF" customClass="LapViewController" customModule="StopWatch2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aiM-T9-ha2"/>
+                        <viewControllerLayoutGuide type="bottom" id="uza-oA-e4M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1VE-da-duj">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flame.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ddi-qf-0hx">
+                                <rect key="frame" x="94" y="67" width="548" height="280"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xb-QG-k5i">
+                                <rect key="frame" x="188" y="112" width="415" height="154"/>
+                                <fontDescription key="fontDescription" name="CrystalItalic-" family="Crystal" pointSize="150"/>
+                                <color key="textColor" red="1" green="0.65856083939999999" blue="0.21138644100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG9-Xd-ePG">
+                                <rect key="frame" x="417" y="277" width="61" height="61"/>
+                                <state key="normal" image="ButtonBACK_SW.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back" destination="CuU-VO-ixF" eventType="touchUpInside" id="S4a-LY-Yx0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70g-TZ-4dX">
+                                <rect key="frame" x="562" y="277" width="61" height="61"/>
+                                <state key="normal" image="ButtonNEXT_SW.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="next" destination="CuU-VO-ixF" eventType="touchUpInside" id="Ngn-sy-VQk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzF-kN-FXK">
+                                <rect key="frame" x="138" y="112" width="82" height="28"/>
+                                <fontDescription key="fontDescription" name="CrystalItalic-" family="Crystal" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.65856083939999999" blue="0.21138644100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYU-Xs-Bi3">
+                                <rect key="frame" x="113" y="277" width="61" height="61"/>
+                                <state key="normal" image="ButtonPV_SW.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousView" destination="CuU-VO-ixF" eventType="touchUpInside" id="mJ6-Es-vUa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LAPS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq5-3F-yYy">
+                                <rect key="frame" x="497" y="297" width="51" height="21"/>
+                                <fontDescription key="fontDescription" name="CrystalItalic-" family="Crystal" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VjP-IP-165"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="amountlapLabel" destination="hzF-kN-FXK" id="6Xz-uP-tG9"/>
+                        <outlet property="laptimeLabel" destination="3Xb-QG-k5i" id="NBL-a0-ToF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E60-eP-PYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="838"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ButtonAC_SW.png" width="512" height="512"/>
+        <image name="ButtonBACK_SW.png" width="512" height="512"/>
+        <image name="ButtonLAP_SW.png" width="512" height="512"/>
+        <image name="ButtonNEXT_SW.png" width="512" height="512"/>
+        <image name="ButtonPV_SW.png" width="512" height="512"/>
+        <image name="ButtonREC_SW.png" width="512" height="512"/>
+        <image name="Button_SW.png" width="512" height="512"/>
+        <image name="flame.png" width="512" height="272"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

@@ -13,6 +13,16 @@
 		A32D8CB61B11D4150017BE12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32D8CB51B11D4150017BE12 /* Images.xcassets */; };
 		A32D8CB91B11D4150017BE12 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A32D8CB71B11D4150017BE12 /* LaunchScreen.xib */; };
 		A32D8CC51B11D4150017BE12 /* StopWatch2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32D8CC41B11D4150017BE12 /* StopWatch2Tests.swift */; };
+		A32D8CCF1B11D52F0017BE12 /* LapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32D8CCE1B11D52F0017BE12 /* LapViewController.swift */; };
+		A32D8CEA1B11DD4E0017BE12 /* Button_SW.png in Resources */ = {isa = PBXBuildFile; fileRef = A32D8CE21B11DD4E0017BE12 /* Button_SW.png */; };
+		A32D8CEB1B11DD4E0017BE12 /* flame.png in Resources */ = {isa = PBXBuildFile; fileRef = A32D8CE31B11DD4E0017BE12 /* flame.png */; };
+		A32D8CEC1B11DD4E0017BE12 /* Crysta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A32D8CE41B11DD4E0017BE12 /* Crysta.ttf */; };
+		A32D8CED1B11DD4E0017BE12 /* ButtonBACK_SW.png in Resources */ = {isa = PBXBuildFile; fileRef = A32D8CE51B11DD4E0017BE12 /* ButtonBACK_SW.png */; };
+		A32D8CEE1B11DD4E0017BE12 /* ButtonNEXT_SW.png in Resources */ = {isa = PBXBuildFile; fileRef = A32D8CE61B11DD4E0017BE12 /* ButtonNEXT_SW.png */; };
+		A32D8CEF1B11DD4E0017BE12 /* ButtonAC_SW.png in Resources */ = {isa = PBXBuildFile; fileRef = A32D8CE71B11DD4E0017BE12 /* ButtonAC_SW.png */; };
+		A32D8CF01B11DD4E0017BE12 /* ButtonLAP_SW.png in Resources */ = {isa = PBXBuildFile; fileRef = A32D8CE81B11DD4E0017BE12 /* ButtonLAP_SW.png */; };
+		A32D8CF11B11DD4E0017BE12 /* ButtonREC_SW.png in Resources */ = {isa = PBXBuildFile; fileRef = A32D8CE91B11DD4E0017BE12 /* ButtonREC_SW.png */; };
+		A32D8CF51B11E3680017BE12 /* ButtonPV_SW.png in Resources */ = {isa = PBXBuildFile; fileRef = A32D8CF41B11E3680017BE12 /* ButtonPV_SW.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,16 @@
 		A32D8CBE1B11D4150017BE12 /* StopWatch2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopWatch2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32D8CC31B11D4150017BE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A32D8CC41B11D4150017BE12 /* StopWatch2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch2Tests.swift; sourceTree = "<group>"; };
+		A32D8CCE1B11D52F0017BE12 /* LapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LapViewController.swift; sourceTree = "<group>"; };
+		A32D8CE21B11DD4E0017BE12 /* Button_SW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_SW.png; sourceTree = "<group>"; };
+		A32D8CE31B11DD4E0017BE12 /* flame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flame.png; sourceTree = "<group>"; };
+		A32D8CE41B11DD4E0017BE12 /* Crysta.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Crysta.ttf; sourceTree = "<group>"; };
+		A32D8CE51B11DD4E0017BE12 /* ButtonBACK_SW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBACK_SW.png; sourceTree = "<group>"; };
+		A32D8CE61B11DD4E0017BE12 /* ButtonNEXT_SW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonNEXT_SW.png; sourceTree = "<group>"; };
+		A32D8CE71B11DD4E0017BE12 /* ButtonAC_SW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonAC_SW.png; sourceTree = "<group>"; };
+		A32D8CE81B11DD4E0017BE12 /* ButtonLAP_SW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonLAP_SW.png; sourceTree = "<group>"; };
+		A32D8CE91B11DD4E0017BE12 /* ButtonREC_SW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonREC_SW.png; sourceTree = "<group>"; };
+		A32D8CF41B11E3680017BE12 /* ButtonPV_SW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPV_SW.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +97,10 @@
 		A32D8CAB1B11D4150017BE12 /* StopWatch2 */ = {
 			isa = PBXGroup;
 			children = (
+				A32D8CE11B11DD4E0017BE12 /* Material */,
 				A32D8CAE1B11D4150017BE12 /* AppDelegate.swift */,
 				A32D8CB01B11D4150017BE12 /* ViewController.swift */,
+				A32D8CCE1B11D52F0017BE12 /* LapViewController.swift */,
 				A32D8CB21B11D4150017BE12 /* Main.storyboard */,
 				A32D8CB51B11D4150017BE12 /* Images.xcassets */,
 				A32D8CB71B11D4150017BE12 /* LaunchScreen.xib */,
@@ -111,6 +133,22 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		A32D8CE11B11DD4E0017BE12 /* Material */ = {
+			isa = PBXGroup;
+			children = (
+				A32D8CE21B11DD4E0017BE12 /* Button_SW.png */,
+				A32D8CE31B11DD4E0017BE12 /* flame.png */,
+				A32D8CE41B11DD4E0017BE12 /* Crysta.ttf */,
+				A32D8CE51B11DD4E0017BE12 /* ButtonBACK_SW.png */,
+				A32D8CE61B11DD4E0017BE12 /* ButtonNEXT_SW.png */,
+				A32D8CE71B11DD4E0017BE12 /* ButtonAC_SW.png */,
+				A32D8CE81B11DD4E0017BE12 /* ButtonLAP_SW.png */,
+				A32D8CE91B11DD4E0017BE12 /* ButtonREC_SW.png */,
+				A32D8CF41B11E3680017BE12 /* ButtonPV_SW.png */,
+			);
+			path = Material;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -161,6 +199,7 @@
 				TargetAttributes = {
 					A32D8CA81B11D4150017BE12 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = K9CDYU7438;
 					};
 					A32D8CBD1B11D4150017BE12 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -192,9 +231,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32D8CF11B11DD4E0017BE12 /* ButtonREC_SW.png in Resources */,
+				A32D8CEE1B11DD4E0017BE12 /* ButtonNEXT_SW.png in Resources */,
+				A32D8CEC1B11DD4E0017BE12 /* Crysta.ttf in Resources */,
+				A32D8CF51B11E3680017BE12 /* ButtonPV_SW.png in Resources */,
 				A32D8CB41B11D4150017BE12 /* Main.storyboard in Resources */,
+				A32D8CEA1B11DD4E0017BE12 /* Button_SW.png in Resources */,
+				A32D8CED1B11DD4E0017BE12 /* ButtonBACK_SW.png in Resources */,
+				A32D8CF01B11DD4E0017BE12 /* ButtonLAP_SW.png in Resources */,
+				A32D8CEF1B11DD4E0017BE12 /* ButtonAC_SW.png in Resources */,
 				A32D8CB91B11D4150017BE12 /* LaunchScreen.xib in Resources */,
 				A32D8CB61B11D4150017BE12 /* Images.xcassets in Resources */,
+				A32D8CEB1B11DD4E0017BE12 /* flame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A32D8CB11B11D4150017BE12 /* ViewController.swift in Sources */,
+				A32D8CCF1B11D52F0017BE12 /* LapViewController.swift in Sources */,
 				A32D8CAF1B11D4150017BE12 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,9 +385,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StopWatch2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -346,9 +398,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StopWatch2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -405,6 +460,7 @@
 				A32D8CCA1B11D4150017BE12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A32D8CCB1B11D4150017BE12 /* Build configuration list for PBXNativeTarget "StopWatch2Tests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +469,7 @@
 				A32D8CCD1B11D4150017BE12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
